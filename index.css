@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #3882f6;
+  --dark-bg: #1f2937;
+  --gray-bg: #e5e7eb;
+
+  --header-text: #f9faf8;
+
+  --hero-main-text: #f9faf8;
+  --hero-secondary-text: #e5e7eb;
+
+  --info-header-text: #1f2937;
+
+  --quote-text: #1f2937;
+
+  font-family: "Roboto", "Segoe UI", sans-serif;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section.hero {
+  color: white;
+  background-color: var(--dark-bg);
+}
+
+header {
+  padding: 1rem 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--header-text);
+}
+
+header .text {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+header .links {
+  display: flex;
+  gap: 1rem;
+}
+
+section.hero .content {
+  padding: 10rem 0;
+
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+section.hero .content .left,
+section.hero .content .right {
+  flex: 1;
+}
+
+section.hero .content .left h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+section.hero .content .left p {
+  font-size: 1.125rem;
+
+  margin-top: 0.5rem;
+  color: var(--hero-secondary-text);
+}
+
+section.hero .content .left button {
+  background-color: var(--primary);
+  color: white;
+
+  margin-top: 0.5rem;
+}
+
+section.hero .content .right img {
+  max-width: 100%;
+}
+
+section.info {
+  padding: 4rem 0;
+}
+
+section.info h2 {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--info-header-text);
+}
+
+section.info .content {
+  margin-top: 3rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+section.info .content .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 12rem;
+
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+section.info .content .item .img-container {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  border: 0.25rem solid var(--primary);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+section.info .content .item .img-container img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+}
+
+section.quote {
+  padding: 8rem 0;
+  background-color: var(--gray-bg);
+  color: var(--quote-text);
+}
+
+section.quote .container {
+  padding: 0 7.25rem;
+}
+
+section.quote q {
+  font-size: 2.25rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+section.quote p {
+  text-align: end;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+section.action {
+  padding: 8rem 0;
+}
+
+section.action .content {
+  background-color: var(--primary);
+  color: white;
+  padding: 4rem 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+
+section.action button {
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  box-shadow: none;
+  color: white;
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: var(--dark-bg);
+  color: white;
+  text-align: center;
+
+  font-size: 1.25rem;
+}
